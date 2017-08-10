@@ -4,12 +4,24 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+// engine views
+var hbs = require('express-handlebars');
+//routes
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
+
+
+//Engine of Handlebars
+app.engine('.hbs', hbs({
+  extname:'.hbs',
+  defaultLayout:'main',
+  layoutsDir: __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials'
+  })
+);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

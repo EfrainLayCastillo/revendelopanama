@@ -1,2 +1,64 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="colored-header">
+  {{> blocks/topbar }}
+  {{> blocks/navbar }}
+</div>
+  {{> blocks/search }}
+
+  <!-- =-=-=-=-=-=-= Light Header End  =-=-=-=-=-=-= -->
+<!-- =-=-=-=-=-=-= Hero Category Section =-=-=-=-=-=-= -->
+<section id="hero" class="hero bg-img-4">
+   <div class="content">
+      <p>Most <b> Popular</b> Classified <b> Categories</b></p>
+      <h1>Search from largest  classifieds marketplace & Post unlimited classifieds free!</h1>
+      <div class="search-holder">
+         <ul class="nav nav-tabs">
+            <!-- Category -->
+            <li class="clearfix">
+               <a href="#"> <i class="flaticon-transport-9"></i> <span class="hidden-xs">Car & Bikes </span></a>
+            </li>
+            <!-- Category -->
+            <li class="clearfix">
+               <a href="#"> <i class="flaticon-technology-23"></i> <span class="hidden-xs">Mobiles & Tablets</span></a>
+            </li>
+            <!-- Category -->
+            <li class="clearfix">
+               <a href="#"> <i class="flaticon-internet-2"></i> <span class="hidden-xs">Property & Land</span></a>
+            </li>
+            <!-- Category -->
+            <li class="clearfix">
+               <a href="#"> <i class="flaticon-game"></i> <span class="hidden-xs">Sports</span></a>
+            </li>
+            <!-- Category -->
+            <li class="clearfix">
+               <a href="#"> <i class="flaticon-jacket-1"></i> <span class="hidden-xs">Fashion & Cloths</span></a>
+            </li>
+         </ul>
+      </div>
+      <!-- .search-holder -->
+   </div>
+   <!-- .content -->
+</section>
+<!-- =-=-=-=-=-=-= Hero Category Section  End =-=-=-=-=-=-= -->
+  <div class="main-content-area clearfix">
+    {{> features/latestfeature }}
+
+    {{> blocks/footer}}
+  </div>
+
+  <!-- modals -->
+{{> modals }}
+
+
+
+
+
+<!-- Post Ad Sticky -->
+  <a href="#" class="sticky-post-button">
+    <span class="sell-icons">
+      <i class="flaticon-transport-9"></i>
+    </span>
+      <h4>SELL</h4>
+  </a>
+
+<!-- Back To Top -->
+  <a href="#0" class="cd-top">Top</a>
